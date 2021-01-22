@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
  * Main class to start the application.
- * Commenttt
+ * Commentttdß
  */
 @EnableJpaAuditing
 @SpringBootApplication
