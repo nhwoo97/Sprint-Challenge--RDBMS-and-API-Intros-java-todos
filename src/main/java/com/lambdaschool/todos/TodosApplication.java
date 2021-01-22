@@ -6,20 +6,19 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
  * Main class to start the application.
+ * Commenttt
  */
 @EnableJpaAuditing
 @SpringBootApplication
-public class TodosApplication
-{
+public class TodosApplication {
 
     /**
      * Main method to start the application.
      *
      * @param args Not used in this application.
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         SpringApplication.run(TodosApplication.class,
-            args);
+                args);
     }
 }

@@ -37,48 +37,48 @@ public class SeedData implements CommandLineRunner
     public void run(String[] args) throws Exception
     {
         User u1 = new User("admin",
-            "password",
-            "admin@lambdaschool.local");
+                "password",
+                "admin@lambdaschool.local");
         u1.getTodos()
-            .add(new Todos(u1,
-                "Give Joe access rights"));
+                .add(new Todos(u1,
+                        "Give Joe access rights"));
         u1.getTodos()
-            .add(new Todos(u1,
-                "Change the color of the home page"));
+                .add(new Todos(u1,
+                        "Change the color of the home page"));
 
         userService.save(u1);
 
         User u2 = new User("cinnamon",
-            "1234567",
-            "cinnamon@lambdaschool.local");
+                "1234567",
+                "cinnamon@lambdaschool.local");
         u2.getTodos()
-            .add(new Todos(u2,
-                "Take a nap"));
+                .add(new Todos(u2,
+                        "Take a nap"));
         u2.getTodos()
-            .add(new Todos(u2,
-                "Rearrange my hutch"));
+                .add(new Todos(u2,
+                        "Rearrange my hutch"));
         u2.getTodos()
-            .add(new Todos(u2,
-                "Groom my fur"));
+                .add(new Todos(u2,
+                        "Groom my fur"));
         userService.save(u2);
 
         // user
         User u3 = new User("barnbarn",
-            "ILuvM4th!",
-            "barnbarn@lambdaschool.local");
+                "ILuvM4th!",
+                "barnbarn@lambdaschool.local");
         u3.getTodos()
-            .add(new Todos(u3,
-                "Rearrange my hutch"));
+                .add(new Todos(u3,
+                        "Rearrange my hutch"));
         userService.save(u3);
 
         User u4 = new User("puttat",
-            "password",
-            "puttat@school.lambda");
+                "password",
+                "puttat@school.lambda");
         userService.save(u4);
 
         User u5 = new User("misskitty",
-            "password",
-            "misskitty@school.lambda");
+                "password",
+                "misskitty@school.lambda");
         userService.save(u5);
     }
 }
