@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "todos")
-public class Todo extends Auditable {
+public class Todos extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,18 +22,18 @@ public class Todo extends Auditable {
     @JsonIgnoreProperties(value = "todos", allowSetters = true)
     private User user;
 
-    public Todo() {
+    public Todos() {
         // Default constructor for JPA
     }
 
-    public Todo(User user, String description) {
+    public Todos(User user, String description) {
         this.user = user;
         this.description = description;
         this.completed = false;
 
     }
 
-    public Todo(User user, String description, boolean completed) {
+    public Todos(User user, String description, boolean completed) {
         this.description = description;
         this.completed = completed;
         this.user = user;

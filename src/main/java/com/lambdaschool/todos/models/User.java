@@ -46,7 +46,7 @@ public class User extends Auditable
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnoreProperties(value = "user")
-    private List<Todo> todos = new ArrayList<>();
+    private List<Todos> todos = new ArrayList<>();
 
     /**
      * Default constructor used primarily by the JPA.
@@ -166,11 +166,11 @@ public class User extends Auditable
         this.password = password;
     }
 
-    public List<Todo> getTodos() {
+    public List<Todos> getTodos() {
         return todos;
     }
 
-    public void setTodos(List<Todo> todo) {
+    public void setTodos(List<Todos> todo) {
         this.todos = todos;
     }
 }
