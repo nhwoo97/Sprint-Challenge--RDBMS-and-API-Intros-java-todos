@@ -2,6 +2,7 @@ package com.lambdaschool.todos.services;
 
 import com.lambdaschool.todos.models.User;
 import com.lambdaschool.todos.views.UserNameCountTodos;
+import com.lambdaschool.todos.views.UserTodoCount;
 
 import java.util.List;
 
@@ -48,4 +49,6 @@ public interface UserService
      * @return List of UserNameCountTodos
      */
     List<UserNameCountTodos> getCountUserTodos();
+
+    List<UserTodoCount> getUserTodoCount();
 }
